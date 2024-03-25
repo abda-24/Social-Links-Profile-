@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+    --primary-white: hsl(0, 0%, 100%);
+    --primary-black: hsl(0, 0%, 20%);
+    --primary-gray: hsl(0, 0%, 12%);
+    --primary-light-gray: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--primary-black);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    background-color: var(--primary-gray);
+    color: var(--primary-white);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 400px;
+    text-align: center;
+    border-radius: .75rem;
+}
+
+.card img {
+    margin-bottom: .5rem;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.card h2 {
+    font-size: 1.57rem;
+}
+
+.card .loc {
+    color: var(--primary-green);
+    margin: .5rem 0 1rem;
+    font-weight: 700;
+}
+
+.card ul {
+    margin-top: 1.75rem;
+}
+
+.card ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.card ul li a {
+    display: block;
+    background-color: var(--primary-gray);
+    color: var(--primary-white);
+    padding: .1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+}
+
+.card ul li a:hover {
+    background-color: var(--primary-green);
+    color: var(--primary-black);
+}
